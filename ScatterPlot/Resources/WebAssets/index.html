@@ -1,0 +1,29 @@
+<html>
+
+	<head>
+
+		<script>
+			function OnClick()
+			{
+				MiddleVR.Call("MyCommand");	
+			}
+
+			function AddResult( text )
+			{
+				document.getElementById('result').innerHTML += text + '<br>';
+			}
+		</script>
+
+	</head>
+
+	<body style="background-color: white;">
+
+		<button onclick="OnClick()">Click Me!</button>
+
+		<p>Result:</p>
+
+		<div id="result"></div>
+
+	</body>
+
+</html>
